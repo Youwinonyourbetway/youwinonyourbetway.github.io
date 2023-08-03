@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youwin on your betway - Data Deletion Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            color: #555;
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Youwin on your betway - Data Deletion Request</h1>
+    </header>
+
+    <div class="container">
+        <p>Please enter your email below to request the deletion of your data from our system.</p>
+        <form id="dataDeletionForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="button-container">
+                <button type="submit" class="button">Request Data Deletion</button>
+            </div>
+        </form>
+
+        <div class="data-types">
+            <h2>Data Types We Delete:</h2>
+            <ul>
+                <li>Personal Information (Name, Address, etc.)</li>
+                <li>Contact Information (Email, Phone Number, etc.)</li>
+                <li>Account Preferences</li>
+            </ul>
+        </div>
+
+        <div class="data-types">
+            <h2>Data Types We Retain:</h2>
+            <ul>
+                <li>Non-personal statistical data for analysis</li>
+                <li>Financial transaction history (for legal and accounting purposes)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Add your JavaScript code here (if needed)
+        document.getElementById("dataDeletionForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            // Add logic for data deletion request
+            console.log("Data deletion request for email: " + email);
+        });
+    </script>
+</body>
+
+</html>
